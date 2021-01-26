@@ -8,8 +8,8 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #4070F4;
-  --second-color: #0E2431;
+  --first-color: #FF5733;
+  --second-color: #000000;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -289,16 +289,19 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
-}
-.skills__css{
-  width: 85%;
-}
-.skills__js{
   width: 65%;
 }
-.skills__ux{
+.skills__java{
+  width: 65%;
+}
+.skills__js{
+  width: 75%;
+}
+.skills__python{
   width: 85%;
+}
+.skills__unity{
+  width: 50%;
 }
 .skills__img{
   border-radius: .5rem;
@@ -319,6 +322,28 @@ img{
 }
 .work__img img:hover{
   transform: scale(1.1);
+  opacity: 0.3;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.work__img:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /* background-color: #4CAF50; */
+  color: #FF5733;
+  font-size: 16px;
+  /* padding: 16px 32px; */
 }
 
 /* ===== CONTACT =====*/
